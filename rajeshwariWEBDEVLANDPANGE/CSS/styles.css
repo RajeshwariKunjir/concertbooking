@@ -1,0 +1,735 @@
+/* Global Styles */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Material Symbols Outlined", Arial, sans-serif;
+  background-image: url("/IMAGES/img3.avif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-color: #dad0db; Fallback background color */
+  background-attachment: fixed; /* Keep the background fixed while scrolling */
+  @media (max-width: 768px) {
+    font-size: 16px; /* Reduce font size for smaller screens */
+  }
+}
+
+body {
+  padding-top: 80px; /* Adjust this value based on the height of your header */
+}
+
+.navbar a,
+h1,
+h2,
+h3,
+div,
+p {
+  font-family: Arial, sans-serif;
+  /* Add any other styling for these elements as needed */
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  z-index: 1000;
+  @media (max-width: 768px) {
+    position: relative; /* Change positioning for smaller screens */
+    padding: 10px; /* Add padding for better spacing */
+  }
+}
+
+.div1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+h1 {
+  margin: 0;
+}
+
+.navbar {
+  display: flex;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.navbar li {
+  margin: 0 15px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar a:hover {
+  color: #000;
+}
+
+/* Login page */
+.login-container,
+.signup-container {
+  background-color: #fff;
+  max-width: 400px;
+  margin: 200px auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin: 10px 0;
+  color: #333;
+  font-weight: bold;
+}
+
+input {
+  padding: 10px;
+  margin: 5px 0 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #000;
+}
+
+p {
+  margin-top: 20px;
+}
+
+a {
+  color: #333;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #000;
+}
+
+/* Main Content Styles */
+.main_start {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between; /* Add space between items */
+  max-width: 1200px; /* Set the maximum width of the container */
+  margin: auto;
+  padding: 20px; /* Add padding for betteer spacing */
+  @media (max-width: 768px) {
+    flex-direction: column; /* Change flex direction for smaller screens */
+  }
+}
+
+h2 {
+  color: #000000;
+  margin: 0;
+  padding: 10px 100px;
+  font-size: 70px;
+  font-weight: bold;
+  padding: 60px;
+  @media (max-width: 768px) {
+    font-size: 48px; /* Reduce font size for smaller screens */
+    padding: 20px; /* Add padding for better spacing */
+  }
+}
+
+.main-h1 {
+  font-size: 70px;
+  background-color: #000000;
+  color: hsl(0, 0%, 100%);
+  font-weight: bold;
+  box-shadow: 0 0 40px hwb(0 0% 100%);
+}
+
+.intro-paragraph {
+  background-color: hwb(0 100% 0%);
+  background-size: cover;
+  padding: 20px 50px 50px;
+  border-radius: 30px;
+  box-shadow: 0 0 50px #000000c2;
+  margin-bottom: 20px;
+  animation: fadeIn 1s ease-out;
+  font-size: 20px;
+  max-width: 800px;
+  font-weight: bolder;
+  line-height: 1cm;
+  opacity: 1;
+  color: hwb(0 0% 100%);
+  font-style: bold;
+  font-weight: bold;
+  font-family: cursive;
+  @media (max-width: 768px) {
+    padding: 20px; /* Add padding for better spacing */
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* MySlides styles */
+.mySlides {
+  display: none;
+  width: 80%; /* Set the width to 80% */
+  margin: auto;
+}
+
+img {
+  width: 100%;
+  vertical-align: middle;
+  border-radius: 10px; /* Add rounded edges */
+  box-shadow: 0 4px 50px hsl(0, 0%, 0%); /* Add shadow */
+}
+
+/* Slideshow container styles */
+.slideshow-container {
+  position: relative;
+  margin: auto;
+  @media (max-width: 768px) {
+    max-width: 100%; /* Make slideshow container fill the width of the screen */
+  }
+}
+
+/* Next & previous buttons styles */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  border: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  @media (max-width: 768px) {
+    top: 0; /* Change positioning for smaller screens */
+    width: 50px; /* Reduce button size for smaller screens */
+    font-size: 36px; /* Increase font size for smaller screens */
+  }
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(250, 250, 250, 0.8);
+  font-size: 50px;
+}
+
+.slideshow-container:hover .prev,
+.slideshow-container:hover .next {
+  opacity: 1;
+}
+
+/* Caption text styles */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  @media (max-width: 768px) {
+    bottom: 10px; /* Change positioning for smaller screens */
+    font-size: 18px; /* Reduce font size for smaller screens */
+  }
+}
+
+/* Number text styles (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  @media (max-width: 768px) {
+    display: none; /* Hide number text for smaller screens */
+  }
+}
+
+/* The dots/bullets/indicators styles */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 8px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  @media (max-width: 768px) {
+    height: 10px; /* Reduce dot size for smaller screens */
+    width: 10px; /* Reduce dot size for smaller screens */
+  }
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation styles */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 576px) {
+  .prev,
+  .next,
+  .text {
+    font-size: 50px;
+  }
+}
+
+/* Span icon styles */
+.span_icon {
+  padding: 30px 130px;
+}
+
+/* Material Icon Styles */
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+  transition: color 0.3s ease-out;
+}
+
+.material-symbols-outlined:hover {
+  color: red; /* Change the color to red on hover */
+  animation: glow 1s infinite alternate; /* Add a glow animation */
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px red, 0 0 20px red, 0 0 30px red; /* Add a text-shadow effect for glowing */
+  }
+  to {
+    text-shadow: 0 0 20px red, 0 0 30px red, 0 0 40px red; /* Adjust the text-shadow for the glow effect */
+  }
+}
+
+.trending-concerts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 8px;
+  @media (max-width: 768px) {
+    flex-direction: column; /* Change flex direction for smaller screens */
+  }
+}
+
+.flex-contain {
+  flex-basis: calc(33.33% - 20px);
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  @media (max-width: 768px) {
+    flex-basis: 100%; /* Make flex items fill the width of the screen */
+    margin-bottom: 10px; /* Reduce margin for smaller screens */
+  }
+}
+
+.concert-image {
+  width: 100%; /* Make images fill the width of the container */
+  height: 40vh; /* Maintain aspect ratio */
+  @media (max-width: 768px) {
+    width: 100%; /* Make images fill the width of the screen */
+    height: auto; /* Maintain aspect ratio */
+  }
+}
+
+.flex-contain > div {
+  padding: 10px 5px; /* Add padding to top and bottom */
+  color: #000000;
+  font-size: 20px;
+  text-decoration: solid;
+  text-transform: uppercase;
+  @media (max-width: 768px) {
+    font-size: 18px; /* Reduce font size for smaller screens */
+  }
+}
+
+.inner-money {
+  display: flex;
+  align-items: center;
+  @media (max-width: 768px) {
+    flex-direction: column; /* Change flex direction for smaller screens */
+  }
+}
+
+.inner-money p {
+  margin: 0; /* Remove margin */
+  margin-left: 5px; /* Add left margin */
+  color: #000000;
+  font-size: 25px;
+  @media (max-width: 768px) {
+    margin-left: 0; /* Remove left margin for smaller screens */
+  }
+}
+
+.currency {
+  margin-right: 5px; /* Add right margin */
+  @media (max-width: 768px) {
+    margin-right: 0; /* Remove right margin for smaller screens */
+  }
+}
+
+.favorite-icon:hover {
+  cursor: pointer;
+  @media (max-width: 768px) {
+    cursor: pointer; /* Change cursor on hover for smaller screens */
+  }
+}
+
+.trending-shows {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1200px; /* Adjust as needed */
+  margin: auto;
+  @media (max-width: 768px) {
+    flex-wrap: wrap; /* Allow flex items to wrap for smaller screens */
+  }
+}
+
+.flex-container {
+  display: flex;
+  padding: 20px 20px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  @media (max-width: 768px) {
+    width: 100%; /* Make flex items fill the width of the screen */
+  }
+}
+
+.flex-container a {
+  display: table-cell;
+  text-decoration: none;
+  @media (max-width: 768px) {
+    width: 100%; /* Make links fill the width ofthe screen */
+  }
+}
+
+.flex-container img {
+  width: 300px; /* Adjust the value as needed */
+  height: 300px; /* Adjust the value as needed */
+  border-radius: 8px;
+}
+
+.review-div {
+  background-color: #000000;
+  color: hsl(61, 100%, 48%);
+  box-shadow: 0 0 40px hwb(0 100% 0%);
+  max-width: 1200px; /* Set the maximum width of the container */
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  @media (max-width: 768px) {
+    flex-direction: column; /* Change flex direction for smaller screens */
+  }
+}
+
+.review-box {
+  background-color: #ffffff2c;
+  display: flex;
+  flex-wrap: wrap; /* Allow flex items to wrap to the next line */
+  justify-content: space-between; /* Add space between items */
+  max-width: 1200px; /* Set the maximum width of the container */
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
+  @media (max-width: 768px) {
+    flex-basis: 100%; /* Make review-box fill the width of the screen */
+    margin-bottom: 10px; /* Reduce margin for smaller screens */
+  }
+}
+
+.review-text {
+  flex: 0 0 calc(30% - 20px); /* Set the width of each review-text div to 30% minus the margin */
+  max-height: 200px; /* Limit the height of the review-text div */
+  overflow: auto; /* Add scrollbar if content exceeds the height */
+  padding: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #030000;
+  background-color: #e5470442;
+  border-radius: 10px;
+  margin-bottom: 20px; /* Add margin between divs */
+  margin-right: 20px; /* Add margin between divs */
+  @media (max-width: 768px) {
+    flex-basis: 100%; /* Make review-text fill the width of the screen */
+    max-height: none; /* Remove max-height limit for smaller screens */
+    overflow: visible; /* Remove scrollbar for smaller screens */
+  }
+}
+
+.reviewer-name {
+  display: flex;
+  justify-content: space-between; /* Add space between items */
+  align-items: flex-start; /* Align items at the start */
+  margin-bottom: 10px; /* Add margin bottom for spacing */
+  @media (max-width: 768px) {
+    flex-direction: column; /* Change flex direction for smaller screens */
+  }
+}
+
+.reviewer-name p {
+  color: gold;
+  margin: 0; /* Remove default margin */
+}
+
+.reviewer-name div {
+  display: flex;
+  align-items: center; /* Align items at the center */
+}
+
+.checked {
+  color: orangered;
+  @media (max-width: 768px) {
+    margin-left: 0; /* Remove left margin for smaller screens */
+  }
+}
+
+/* Booking Form Styles */
+#booking-form {
+  max-width: 1200px; /* Set maximum width for the form */
+  margin: 50px auto; /* Center the form horizontally */
+  padding: 20px; /* Add padding to the form */
+  background-color: #fff; /* Set background color */
+  border-radius: 8px; /* Add border radius for rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+  @media (max-width: 768px) {
+    padding: 10px; /* Add padding for better spacing */
+  }
+}
+
+.form-h1 {
+  background-color: #000000;
+  color: hsl(61, 100%, 48%);
+  box-shadow: 0 0 40px hwb(0 100% 0%);
+  max-width: 1200px; /* Set the maximum width of the container */
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+#booking-form label {
+  font-weight: bold; /* Make labels bold */
+  @media (max-width: 768px) {
+    display: block; /* Change display for smaller screens */
+    margin-bottom: 5px; /* Reduce margin for smaller screens */
+  }
+}
+
+#booking-form input[type="text"],
+#booking-form input[type="email"],
+#booking-form input[type="tel"] {
+  width: 100%; /* Set input width to 100% */
+  padding: 10px; /* Add padding to inputs */
+  margin-bottom: 10px; /* Add space between inputs */
+  border: 1px solid #ccc; /* Add border */
+  border-radius: 4px; /* Add border radius */
+  box-sizing: border-box; /* Include padding and border in width calculation */
+  @media (max-width: 768px) {
+    width: 100%; /* Make inputs fill the width of the screen */
+  }
+}
+
+#booking-form input[type="text"]:focus,
+#booking-form input[type="email"]:focus,
+#booking-form input[type="tel"]:focus {
+  outline: none; /* Remove outline on focus */
+  border-color: #333; /* Change border color on focus */
+}
+
+#booking-form small {
+  color: #777; /* Set color for small text */
+  font-size: 12px; /* Set font size for small text */
+}
+
+#booking-form button {
+  width: 100%; /* Set button width to 100% */
+  padding: 10px; /* Add padding to button */
+  background-color: #333; /* Set background color for button */
+  color: #fff; /* Set text color for button */
+  border: none; /* Remove border */
+  border-radius: 4px; /* Add border radius */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  @media (max-width: 768px) {
+    width: 100%; /* Make button fill the width of the screen */
+  }
+}
+
+#booking-form button:hover {
+  background-color: #000; /* Change background color on hover */
+}
+
+footer {
+  background-color: #000000;
+  color: #fff;
+  padding: 20px 0;
+  @media (max-width: 768px) {
+    padding: 10px; /* Add padding for better spacing */
+  }
+}
+
+.footer-section {
+  width: 100%;
+  @media (max-width: 768px) {
+    padding: 10px; /* Add padding for better spacing */
+  }
+}
+
+.footer-container,
+.footer-links {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  @media (max-width: 768px) {
+    flex-direction: column; /* Change flex direction for smaller screens */
+  }
+}
+
+.footer-section h3 {
+  font-size: 18px;
+  margin-bottom: 50px;
+  white-space: nowrap;
+  font-weight: bold;
+  @media (max-width: 768px) {
+    margin-bottom: 20px; /* Reduce margin for smaller screens */
+  }
+}
+
+.footer-section ul {
+  font-size: 15px;
+  list-style: none;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  @media (max-width: 768px) {
+    flex-direction: column; /* Change flex direction for smaller screens */
+  }
+}
+
+.footer-para {
+  white-space: nowrap;
+  padding: 70px 0;
+}
+.footer-section ul li {
+  margin-bottom: 15px;
+  white-space: nowrap;
+  @media (max-width: 768px) {
+    margin-bottom: 20px; /* Reduce margin for smaller screens */
+  }
+}
+
+.footer-section ul li a {
+  color: #fff;
+  text-decoration: none;
+  @media (max-width: 768px) {
+    margin-bottom: 20px; /* Reduce margin for smaller screens */
+  }
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+  @media (max-width: 768px) {
+    margin-bottom: 20px; /* Reduce margin for smaller screens */
+  }
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.footer-social-icons {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  @media (max-width: 768px) {
+    margin-top: 20px; /* Add margin-top for smaller screens */
+  }
+}
+
+.footer-social-icons li {
+  display: inline;
+  margin-right: 10px; /* Adjust as needed */
+}
+
+.footer-social-icons li:last-child {
+  margin-right: 0; /* Remove margin from last item */
+}
+
+.footer-social-icons a {
+  display: inline-block;
+  padding: 5px; /* Adjust as needed */
+}
+
+.footer-social-icons a img {
+  height: 30px; /* Adjust as needed */
+  width: auto;
+}

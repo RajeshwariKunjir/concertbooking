@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/styles.css"> <!-- Link to your existing styles -->
+    <title>wishList</title>
+</head>
+<body>
+    <header>
+        <div class="div1">
+            <h1>TicketTUNE <sup class="trademark">&trade;</sup></h1>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="/html/index.html">HOME</a></li>
+                    <li><a href="#">EVENTS</a></li>
+                    <li><a href="/html/wishList.html">WISHLIST</a></li>
+                    <li><a href="#">ORDERS</a></li>
+                    <li><a href="/html/login.html">LOGIN</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h1>My Events</h1>
+        <div class="wishlist" id="wishlist">
+            <!-- Wishlist items will be dynamically added here -->
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div>
+                <h1>TicketTUNE<sup class="trademark">&trade;</sup></h1>
+                <h3>Let's connect</h3>
+                <ul class="footer-social-icons">
+                    <li><a href="#" target="_blank"><img src="/IMAGES/facebook.png" alt="Facebook"></a></li>
+                    <li><a href="#" target="_blank"><img src="/IMAGES/logos.png" alt="Youtube"></a></li>
+                    <li><a href="#" target="_blank"><img src="/IMAGES/youtube.png" alt="Youtube"></a></li>
+                    <li><a href="#" target="_blank"><img src="/IMAGES/instagram.png" alt="Instagram"></a></li>
+                    <li><a href="#" target="_blank"><img src="/IMAGES/social.png" alt="Instagram"></a></li>
+                </ul>                
+                <p class="footer-para">By continuing past this page, you agree to our <a href="#" style="color: aliceblue;">terms of use</a></p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-section">
+                    <h3>Helpful Links</h3>
+                    <ul>
+                        <li><a href="#">Help/FAQ</a></li>
+                        <li><a href="#">Sell</a></li>
+                        <li><a href="#">My Account</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Gift Cards</a></li>
+                        <li><a href="#">Refunds and Exchanges</a></li>
+                        <li><a href="#">Do Not Sell or Share My <br> Personal Information</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Our Network</h3>
+                    <ul>
+                        <li><a href="#">Live Nation</a></li>
+                        <li><a href="#">House of Blues</a></li>
+                        <li><a href="#">Front Gate Tickets</a></li>
+                        <li><a href="#">TicketWeb</a></li>
+                        <li><a href="#">Universe</a></li>
+                        <li><a href="#">NFL</a></li>
+                        <li><a href="#">NBA</a></li>
+                        <li><a href="#">NHL</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>About Us</h3>
+                    <ul>
+                        <li><a href="#">TicketTUNE Blog</a></li>
+                        <li><a href="#">Ticketing Truths</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Ad Choices</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Ticket Your Event</a></li>
+                        <li><a href="#">Innovation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Friends & Partners</h3>
+                    <ul>
+                        <li><a href="#">PayPal</a></li>
+                        <li><a href="#">Allianz</a></li>
+                        <li><a href="#">AWS</a></li>
+                        <li><a href="#">CURDE</a></li>
+                        <li><a href="#">PayTM</a></li>
+                        <li><a href="#">PhonePay</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="footer-copyright" style="padding-left: 20px">
+            <a href="#" style="color:rgb(255, 255, 255)">Purchase</a> | 
+            <a href="#" style="color:rgb(255, 255, 255)">PolicyPrivacy</a> | 
+            <a href="#" style="color:rgb(255, 255, 255)">PolicyCookie</a> | 
+            <a href="#" style="color:rgb(255, 255, 255)">Policy</a> | 
+            <a href="#" style="color:rgb(255, 255, 255)">Manage my cookies and ad choices</a> 
+            <span style="padding-left: 500px;">© 1999-2024 TicketTUNE. All rights reserved.</span>
+        </div>
+    </footer>
+    <script>
+        // Function to fetch wishlist items and display them
+        async function fetchAndDisplayWishlist() {
+            try {
+                // Fetch wishlist items from the server or an API
+                const response = await fetch('wishlist_items_endpoint');
+                const wishlistItems = await response.json();
+
+                // Display wishlist items in the DOM
+                const wishlistContainer = document.getElementById('wishlist');
+                wishlistItems.forEach(item => {
+                    const wishlistItem = document.createElement('div');
+                    wishlistItem.classList.add('wishlist-item');
+                    wishlistItem.innerHTML = `
+                        <p>${item.name}</p>
+                        <p>${item.description}</p>
+                        <p>${item.destination}</p>
+                        <p>${item.timing}</p>
+                    `;
+                    wishlistContainer.appendChild(wishlistItem);
+                });
+            } catch (error) {
+                console.error('Error fetching wishlist items:', error);
+            }
+        }
+
+        // Call the function to fetch and display wishlist items when the page loads
+        window.addEventListener('load', fetchAndDisplayWishlist);
+    </script>
+</body>
+</html>

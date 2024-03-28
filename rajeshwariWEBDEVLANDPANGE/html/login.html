@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/styles.css"> <!-- Link to your existing styles -->
+    <title>Login - TicketTUNE</title>
+</head>
+<body>
+    <header>
+        <div class="div1">
+            <h1>TicketTUNE <sup class="trademark">&trade;</sup></h1>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="/html/index.html">HOME</a></li>
+                    <li><a href="#">EVENTS</a></li>
+                    <li><a href="/html/wishList.html">WISHLIST</a></li>
+                    <li><a href="#">ORDERS</a></li>
+                    <li><a href="/html/signup.html">SIGNUP</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div>
+            <div class="login-container">
+                <h1>WELCOME!</h1>
+                <div id="error-message" style="color: red;"></div>
+                <form id="login-form">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+        
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+        
+                    <button type="button" onclick="attemptLogin()">Login</button>
+                </form>
+        
+                <p style="color: black;">Don't have an account? <a href="/html/signup.html">Sign up</a></p>
+            </div>
+        </div>
+    </main>
+    
+    <script src="/JS/app.js"></script>
+    
+</body>
+</html>

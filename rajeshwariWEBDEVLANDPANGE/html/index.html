@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/CSS/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>tickettune</title>
+</head>
+<body>
+    <header>
+        <div class="div1">
+            <h1 class="custom-font">TicketTUNE <sup class="trademark">&trade;</sup></h1>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="/html/index.html">HOME</a></li>
+                    <li><a href="/html/events.html">EVENTS</a></li>
+                    <li><a href="/html/wishList.html">WISHLIST</a></li>
+                    <li><a href="/html/orders.html">ORDERS</a></li>
+                    <li><a href="/html/login.html">LOGIN / REGISTER</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="main-content">
+            
+            
+            <div class="main_start">
+                <h2>Welcome to <span class="main-h1">TicketTUNE!</span></h2>
+                </h2>
+                <p class="intro-paragraph" style="background-color: rgba(245, 245, 245, 0.359);"><span style="color: #ed0000;"> Experience the joy of live events and the thrill of unforgettable performances at TicketTUNE.</span> <br> <span style="color:olivedrab"> Our platform is designed to bring happiness and excitement to your life through a variety of events that cater to diverse interests.</span> <br> <span style="color: rgb(64, 4, 120);">From soulful concerts to thrilling sports events, we aim to create memorable moments that resonate with the happiness in your heart.</span></p>
+
+        <!-- Your existing slideshow container code goes here -->
+            </div>
+            <!-- <hr style="background-color: black; font-weight:bold; height:0.2rem"> -->
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <a href="https://insider.in/arijit-singh-live-in-pune-march17-2024/event" target="_blank"><img src="/IMAGES/arijitconcert.webp" style="width:100%"></a>
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 3</div>
+                  <a href="https://insider.in/vishal-mishra-pehle-bhi-main-india-tour-2024-i-pune-mar23-2024/event" target="_blank"><img src="/IMAGES/vishalmishra.jpg" style="width:100%"></a>
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 3</div>
+                  <a href="https://insider.in/shahensha-e-qawwali-mar30-2024/event" target="_blank"><img src="/IMAGES/newOne.jpg" style="width:100%"></a>
+                </div>
+                
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+                
+                </div>
+                <br>
+                
+                <div style="text-align:center">
+                  <span class="dot" onclick="currentSlide(1)"></span> 
+                  <span class="dot" onclick="currentSlide(2)"></span> 
+                  <span class="dot" onclick="currentSlide(3)"></span> 
+                </div>
+            </div>
+        <hr style="background-color: black; font-weight:bold; height:0.2rem">
+        <div>
+            <div class="span_icon" style="display: flex; background-color: rgba(93, 93, 5, 0.222); color:yellow">
+                <span class="material-symbols-outlined custom-font" style="font-size: 50PX;"></span>
+                <h1 style="align-items:center; padding-left:600px; font-size: 50px; color: white">ALL NEW TRENDS</h1>
+                <span class="material-symbols-outlined" style="padding-left: 50px; font-size:50px;">filter_list</span>
+            </div>
+            <hr style="background-color: black; font-weight:bold; height:0.2rem">
+            <div class="trending-concerts">
+                <div class="flex-contain" style="background-color: rgba(255, 255, 255, 0.911);">
+                    <a href="https://insider.in/arijit-singh-live-in-pune-march17-2024/event" target="_blank"><img class="concert-image" src="/IMAGES/arijitsinger.jpeg" alt="Image 1"></a>
+                    <div>
+                        <p>Arijit Singh:</p>
+                        <p style="font-size: 15px;">
+                            Let's immerse ourselves in the mesmerizing melodies of Arijits's music during an electrifying live concert experience  many of which have gone on to be blockbaster hits, that promises to create memories that will last a lifetime!!...................................</p>
+                        <p style="font-size: 18px;">Destination: Singapore (March 2-9) <br>Timinig: 05:00 PM - 10:00 PM
+                        </p>
+                        <div class="inner-money">
+                            <span class="material-symbols-outlined" style="color:rgb(0, 0, 0)">currency_rupee</span>
+                            <p>1999</p>
+                            <span class="material-icons" onclick="addToWishlist(event)" style="padding-left: 250px; cursor: pointer;">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30" fill="red">
+                                    <path d="M0 0h24v24H0V0z" fill="none"/>
+                                    <path d="M11.99 21.35l-1.43-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.57 11.54l-1.43 1.31zm-1.43-10.96c-.84-.78-2.01-1.44-3.36-1.93a.75.75 0 01-.5-.71c0-.37.27-.68.64-.74A7.47 7.47 0 0111.99 5c1.45 0 2.85.41 4.03 1.18a.75.75 0 01.42.67.75.75 0 01-.65.82c-1.28.37-2.4.91-3.35 1.59zM7.75 14h-1.5v1.5h1.5V14zm4 0h-1.5v1.5h1.5V14zm4 0h-1.5v1.5h1.5V14z"/>
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-contain" style="background-color: rgba(255, 255, 255, 0.911);">
+                    <a href="https://in.bookmyshow.com/events/ajay-atul-live-in-concert-2024-pune/ET00383790" target="_blank"><img class="concert-image" src="/IMAGES/ajayAtul.avif" alt="Image 1"></a>
+                    <div>
+                        <p>Ajay-Atul:</p>
+                        <p style="font-size: 15px;">
+                            Let's immerse ourselves in the mesmerizing melodies of Ajay-Atul's music during an electrifying live concert experience  many of which have gone on to be blockbaster hits, that promises to create memories that will last a lifetime!!...................................</p>
+                        <p style="font-size: 18px;">Destination: India (March 30) <br>Timinig: 07:00 PM - 10:00 PM
+                        </p>
+                        <div class="inner-money">
+                            <span class="material-symbols-outlined" style="color:rgb(0, 0, 0)">currency_rupee</span>
+                            <p>2999</p>
+                            <span class="material-icons" onclick="addToWishlist(event)" style="padding-left: 250px; cursor: pointer;">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30" fill="red">
+                                    <path d="M0 0h24v24H0V0z" fill="none"/>
+                                    <path d="M11.99 21.35l-1.43-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.57 11.54l-1.43 1.31zm-1.43-10.96c-.84-.78-2.01-1.44-3.36-1.93a.75.75 0 01-.5-.71c0-.37.27-.68.64-.74A7.47 7.47 0 0111.99 5c1.45 0 2.85.41 4.03 1.18a.75.75 0 01.42.67.75.75 0 01-.65.82c-1.28.37-2.4.91-3.35 1.59zM7.75 14h-1.5v1.5h1.5V14zm4 0h-1.5v1.5h1.5V14zm4 0h-1.5v1.5h1.5V14z"/>
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-contain" style="background-color: rgba(255, 255, 255, 0.911);">
+                    <a href="https://in.bookmyshow.com/events/urbane-shows-vishal-sheykhar-live-pune/ET00391960" target="_blank"><img class="concert-image" src="/IMAGES/vishal-shekhar.avif" alt="Image 1"></a>
+                    <div>
+                        <p>Vishal-Shekhar:</p>
+                        <p style="font-size: 15px;">
+                            Let's immerse ourselves in the mesmerizing melodies of Vishal-Shekhar's music during an electrifying live concert experience  many of which have gone on to be blockbaster hits, that promises to create memories that will last a lifetime!!...................................</p>
+                        <p style="font-size: 18px;">Destination: India (April 27) <br>Timinig: 05:00 PM - 10:00 PM
+                        </p>
+                        <div class="inner-money">
+                            <span class="material-symbols-outlined" style="color:rgb(0, 0, 0)">currency_rupee</span>
+                            <p>1599</p>
+                            <span class="material-icons" onclick="addToWishlist(event)" style="padding-left: 250px; cursor: pointer;">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30" fill="red">
+                                    <path d="M0 0h24v24H0V0z" fill="none"/>
+                                    <path d="M11.99 21.35l-1.43-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.57 11.54l-1.43 1.31zm-1.43-10.96c-.84-.78-2.01-1.44-3.36-1.93a.75.75 0 01-.5-.71c0-.37.27-.68.64-.74A7.47 7.47 0 0111.99 5c1.45 0 2.85.41 4.03 1.18a.75.75 0 01.42.67.75.75 0 01-.65.82c-1.28.37-2.4.91-3.35 1.59zM7.75 14h-1.5v1.5h1.5V14zm4 0h-1.5v1.5h1.5V14zm4 0h-1.5v1.5h1.5V14z"/>
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-contain" style="background-color: rgba(255, 255, 255, 0.911);">
+                    <a href="https://in.bookmyshow.com/pune/events/jubin-nautiyal-live-in-pune/ET00392272?data=similarEvent&" target="_blank"><img class="concert-image" src="/IMAGES/jubinNautyal.avif" alt="Image 1"></a>
+                    <div>
+                        <p>Jubin Nautiyal:</p>
+                        <p style="font-size: 15px;">Put on your dancing shoes and get ready to Shake It Off in style with arguably, the world’s biggest pop star, Taylor Swift, as she takes her “The Eras Tour” to Singapore. Are you ready to be enchanted? If yes, then book your tickets now and secure your stay!..................................</p>
+                        <p style="font-size: 18px;">Destination: Mumbai (April 10) <br>Timinig: 02:00 PM - 8:00 PM
+                        </p>
+                        <div class="inner-money">
+                            <span class="material-symbols-outlined" style="color:rgb(0, 0, 0)">currency_rupee</span>
+                            <p>1999</p>
+                            <span class="material-icons" onclick="addToWishlist(event)" style="padding-left: 250px; cursor: pointer;">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30" fill="red">
+                                    <path d="M0 0h24v24H0V0z" fill="none"/>
+                                    <path d="M11.99 21.35l-1.43-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.57 11.54l-1.43 1.31zm-1.43-10.96c-.84-.78-2.01-1.44-3.36-1.93a.75.75 0 01-.5-.71c0-.37.27-.68.64-.74A7.47 7.47 0 0111.99 5c1.45 0 2.85.41 4.03 1.18a.75.75 0 01.42.67.75.75 0 01-.65.82c-1.28.37-2.4.91-3.35 1.59zM7.75 14h-1.5v1.5h1.5V14zm4 0h-1.5v1.5h1.5V14zm4 0h-1.5v1.5h1.5V14z"/>
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-contain" style="background-color: rgba(255, 255, 255, 0.911);">
+                    <a href="https://www.viagogo.com/in/Concert-Tickets/Country-and-Folk-Music/Taylor-Swift-Tickets/E-151950348?quantity=2" target="_blank"><img class="concert-image" src="/IMAGES/img2.avif" alt="Image 1"></a>
+                    <div>
+                        <p>Taylor Swift:</p>
+                        <p style="font-size: 15px;">Put on your dancing shoes and get ready to Shake It Off in style with arguably, the world’s biggest pop star, Taylor Swift, as she takes her “The Eras Tour” to Singapore. Are you ready to be enchanted? If yes, then book your tickets now and secure your stay!..................................</p>
+                        <p style="font-size: 18px;">Destination: Singapore (March 2-9) <br>Timinig: 05:00 PM - 10:00 PM
+                        </p>
+                        <div class="inner-money">
+                            <span class="material-symbols-outlined" style="color:rgb(0, 0, 0)">currency_rupee</span>
+                            <p>1999</p>
+                            <span class="material-icons" onclick="addToWishlist(event)" style="padding-left: 250px; cursor: pointer;">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30" fill="red">
+                                    <path d="M0 0h24v24H0V0z" fill="none"/>
+                                    <path d="M11.99 21.35l-1.43-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.57 11.54l-1.43 1.31zm-1.43-10.96c-.84-.78-2.01-1.44-3.36-1.93a.75.75 0 01-.5-.71c0-.37.27-.68.64-.74A7.47 7.47 0 0111.99 5c1.45 0 2.85.41 4.03 1.18a.75.75 0 01.42.67.75.75 0 01-.65.82c-1.28.37-2.4.91-3.35 1.59zM7.75 14h-1.5v1.5h1.5V14zm4 0h-1.5v1.5h1.5V14zm4 0h-1.5v1.5h1.5V14z"/>
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-contain" style="background-color: rgba(255, 255, 255, 0.911);">
+                    <a href="https://in.bookmyshow.com/events/samarpan-2024-biggest-odia-music-concert/ET00390344" target="_blank"><img class="concert-image" src="/IMAGES/samarpan.avif" alt="Image 1"></a>
+                    <div>
+                        <p>SAMARPAN -2024:</p>
+                        <p style="font-size: 15px;">Put on your dancing shoes and get ready to Shake It Off in style with arguably, the world’s biggest pop star, Taylor Swift, as she takes her “The Eras Tour” to Singapore. Are you ready to be enchanted? If yes, then book your tickets now and secure your stay!..................................</p>
+                        <p style="font-size: 18px;">Destination: Pune (April 14) <br>Timinig: 05:00 PM - 10:00 PM
+                        </p>
+                        <div class="inner-money">
+                            <span class="material-symbols-outlined" style="color:rgb(0, 0, 0)">currency_rupee</span>
+                            <p>1999</p>
+                            <span class="material-icons" onclick="addToWishlist(event)" style="padding-left: 250px; cursor: pointer;">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30" fill="red">
+                                    <path d="M0 0h24v24H0V0z" fill="none"/>
+                                    <path d="M11.99 21.35l-1.43-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.57 11.54l-1.43 1.31zm-1.43-10.96c-.84-.78-2.01-1.44-3.36-1.93a.75.75 0 01-.5-.71c0-.37.27-.68.64-.74A7.47 7.47 0 0111.99 5c1.45 0 2.85.41 4.03 1.18a.75.75 0 01.42.67.75.75 0 01-.65.82c-1.28.37-2.4.91-3.35 1.59zM7.75 14h-1.5v1.5h1.5V14zm4 0h-1.5v1.5h1.5V14zm4 0h-1.5v1.5h1.5V14z"/>
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+            <hr style="background-color: black; font-weight:bold; height:0.2rem">
+            <div class="span_icon" style="display: flex; background-color: rgba(93, 93, 5, 0.222); color:yellow">
+                <h1 style="align-items:center; font-size: 50px; color: white">ARTISTS</h1>
+                <span class="material-symbols-outlined" style="padding-left: 900px; font-size:50px;">filter_list</span>
+            </div>
+            <hr style="background-color: black; font-weight:bold; height:0.2rem">
+            <!-- <h1 style="padding-left: 135px; color:white; font-size:40px; background-color: rgba(93, 5, 5, 0.327)">BOLLYWOOD TRENDS</h1> -->
+            <div class="trending-shows" >
+                
+                <div class="flex-container">
+                    <a href="#"><img src="/IMAGES/arijitsinger.jpeg" alt="Image 1"></a>
+                </div>
+                <div class="flex-container">
+                    <a href="#"><img src="/IMAGES/Darshanravalimages.jpeg" alt="Image 2"></a>
+                </div>
+                <div class="flex-container">
+                    <a href="#"><img src="/IMAGES/justinsinger.jpeg" alt="Image 3"></a>
+                </div>
+                <div class="flex-container">
+                    <a href="#"><img src="/IMAGES/zainmaliksinger.jpeg" alt="Image 4"></a>
+                </div>
+                <div class="flex-container">
+                    <a href="#"><img src="/IMAGES/femalesinger1.jpeg" alt="Image 5"></a>
+                </div>
+                <div class="flex-container">
+                    <a href="#"><img src="/IMAGES/arrehmanimages.jpeg" alt="Image 6"></a>
+                </div>
+                <div class="flex-container">
+                    <a href="#"><img src="/IMAGES/kksinger.jpeg" alt="Image 7"></a>
+                </div>
+                <div class="flex-container">
+                    <a href="#"><img src="/IMAGES/a1.jpeg" alt="Image 8"></a>
+                </div>
+                <div class="flex-container">
+                    <a href="#"><img src="/IMAGES/a2.jpeg" alt="Image 9"></a>
+                </div>
+                <div class="flex-container">
+                    <a href="#"><img src="/IMAGES/a3.jpeg" alt="Image 10"></a>
+                </div>
+                <div class="flex-container">
+                    <a href="#"><img src="/IMAGES/salinasinger.jpeg" alt="Image 11"></a>
+                </div>
+                <div class="flex-container">
+                    <a href="#"><img src="/IMAGES/a4.jpeg" alt="Image 12"></a>
+                </div>
+            </div>
+            <hr style="background-color: black; font-weight:bold; height:0.2rem"> 
+        </div>
+        <div>
+            <div>
+                <h1 class="review-div">Reviews</h1>
+            </div>
+            <div class="review-box">
+                <div class="review-text">
+                    <p>
+                        "Embark on a journey of seamless ticket booking, elevating your concert experience beyond the ordinary. Dive into a world where every transaction is effortless, every moment boundless with excitement.  Nostrum, eligendi – your time to shine has arrived."</p>
+                    <div class="reviewer-name">
+                        <p>-Daivd Monro</p>
+                        <div>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-text">
+                    <p>"Enter a realm of effortless ticket booking, where each step sparks boundless excitement. Immerse yourself in seamless transactions, crafting unforgettable moments. Nostrum, eligendi – it's your moment to shine and create lasting memories." </p>
+                    <div class="reviewer-name">
+                        <p>-Sakshi Shrinivas</p>
+                        <div>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-text">
+                    <p>"Step into a realm of seamless ticketing, where anticipation meets ease. Each click ignites excitement, paving the way for unforgettable experiences. Nostrum, eligendi – your gateway to an unforgettable journey awaits." </p>
+                    <div class="reviewer-name">
+                        <p>-Kat Vin</p>
+                        <div>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="review-text">
+                    <p>"Unlock the door to unparalleled excitement with our seamless ticket booking system. Each interaction is a journey of anticipation, leading you to the threshold of unforgettable experiences. Nostrum, eligendi – the stage is set for your grand entrance." </p>
+                    <div class="reviewer-name">
+                        <p>-Alex Patrin</p>
+                        <div>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-text">
+                    <p>"Discover a world where booking tickets is as exhilarating as the event itself. Effortlessly secure your place amidst a sea of anticipation, knowing every step brings you closer to unforgettable moments. Nostrum, eligendi – seize the moment!" </p>
+                    <div class="reviewer-name">
+                        <p>-Rajeshwari Kunjir</p>
+                        <div>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-text">
+                    <p>"Experience the epitome of convenience with our ticketing platform. Seamlessly navigate through the process, immersing yourself in the anticipation of what lies ahead. Nostrum, eligendi – your gateway to excitement beckons." </p>
+                    <div class="reviewer-name">
+                        <p>-Nick Johnus</p>
+                        <div>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr style="background-color: black; font-weight:bold; height:0.2rem"> 
+        <div class="acceptence-form">
+            <h1 class="form-h1">Booking Form</h1>
+            <form id="booking-form">
+                <div>
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name" required><br>
+                </div>
+                <div>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required><br>
+                </div>
+                <div>
+                    <label for="mobile">Mobile Number:</label><br>
+                    <input type="tel" id="mobile" name="mobile" required pattern="[0-9]{10}"><br>
+                    <small>Enter a 10-digit mobile number</small>
+                </div>
+                <button type="submit">Book Now</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div>
+                <h1>TicketTUNE<sup class="trademark">&trade;</sup></h1>
+                <h3>Let's connect</h3>
+                <ul class="footer-social-icons">
+                    <li><a href="#" target="_blank"><img src="/IMAGES/facebook.png" alt="Facebook"></a></li>
+                    <li><a href="#" target="_blank"><img src="/IMAGES/logos.png" alt="Youtube"></a></li>
+                    <li><a href="#" target="_blank"><img src="/IMAGES/youtube.png" alt="Youtube"></a></li>
+                    <li><a href="#" target="_blank"><img src="/IMAGES/instagram.png" alt="Instagram"></a></li>
+                    <li><a href="#" target="_blank"><img src="/IMAGES/social.png" alt="Instagram"></a></li>
+                </ul>                
+                <p class="footer-para">By continuing past this page, you agree to our <a href="#" style="color: aliceblue;">terms of use</a></p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-section">
+                    <h3>Helpful Links</h3>
+                    <ul>
+                        <li><a href="#">Help/FAQ</a></li>
+                        <li><a href="#">Sell</a></li>
+                        <li><a href="#">My Account</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Gift Cards</a></li>
+                        <li><a href="#">Refunds and Exchanges</a></li>
+                        <li><a href="#">Do Not Sell or Share My <br> Personal Information</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Our Network</h3>
+                    <ul>
+                        <li><a href="#">Live Nation</a></li>
+                        <li><a href="#">House of Blues</a></li>
+                        <li><a href="#">Front Gate Tickets</a></li>
+                        <li><a href="#">TicketWeb</a></li>
+                        <li><a href="#">Universe</a></li>
+                        <li><a href="#">NFL</a></li>
+                        <li><a href="#">NBA</a></li>
+                        <li><a href="#">NHL</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>About Us</h3>
+                    <ul>
+                        <li><a href="#">TicketTUNE Blog</a></li>
+                        <li><a href="#">Ticketing Truths</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Ad Choices</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Ticket Your Event</a></li>
+                        <li><a href="#">Innovation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Friends & Partners</h3>
+                    <ul>
+                        <li><a href="#">PayPal</a></li>
+                        <li><a href="#">Allianz</a></li>
+                        <li><a href="#">AWS</a></li>
+                        <li><a href="#">CURDE</a></li>
+                        <li><a href="#">PayTM</a></li>
+                        <li><a href="#">PhonePay</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="footer-copyright" style="padding-left: 20px">
+            <a href="#" style="color:rgb(255, 255, 255)">Purchase</a> | 
+            <a href="#" style="color:rgb(255, 255, 255)">PolicyPrivacy</a> | 
+            <a href="#" style="color:rgb(255, 255, 255)">PolicyCookie</a> | 
+            <a href="#" style="color:rgb(255, 255, 255)">Policy</a> | 
+            <a href="#" style="color:rgb(255, 255, 255)">Manage my cookies and ad choices</a> 
+            <span style="padding-left: 500px;">© 1999-2024 TicketTUNE. All rights reserved.</span>
+        </div>
+    </footer>
+    
+    <script src="/JS/app.js"></script>
+</body>
+</html>
